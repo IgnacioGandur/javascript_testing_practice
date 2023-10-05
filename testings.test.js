@@ -1,4 +1,4 @@
-const {capitalize, reverseString, calculator} = require('./testings');
+const {capitalize, reverseString, calculator, caesarCipher} = require('./testings');
 
 
 test('Capitalize', () => {
@@ -18,4 +18,10 @@ test('Calculator multiply', () => {
 })
 test('Calculator divide', () => {
     expect(calculator.divide(25, 5)).toBe(5);
+})
+test('Caesar cipher', () => {
+    expect(caesarCipher('abcdefghijklmnopqrstuvwxyz')).toBe('bcdefghijklmnopqrstuvwxyza');
+})
+test('Caesar cipher #2', () => {
+    expect(caesarCipher('Defend the east wall of the castle.')).toBe('Efgfoe uif fbtu xbmm pg uif dbtumf.');
 })
