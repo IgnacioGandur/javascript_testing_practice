@@ -1,0 +1,26 @@
+{
+  "name": "javascript_testing_practice",
+  "version": "1.0.0",
+  "description": "Project to test Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IgnacioGandur/javascript_testing_practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IgnacioGandur/javascript_testing_practice/issues"
+  },
+  "homepage": "https://github.com/IgnacioGandur/javascript_testing_practice#readme",
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "jest": "^29.7.0",
+    "prettier": "3.0.3"
+  }
+}
