@@ -1,4 +1,4 @@
-const {capitalize, reverseString, calculator, caesarCipher} = require('./testings');
+const {capitalize, reverseString, calculator, caesarCipher, analyzeArray} = require('./testings');
 
 
 test('Capitalize', () => {
@@ -24,4 +24,7 @@ test('Caesar cipher', () => {
 })
 test('Caesar cipher #2', () => {
     expect(caesarCipher('Defend the east wall of the castle.')).toBe('Efgfoe uif fbtu xbmm pg uif dbtumf.');
+})
+test('Analyze array', () => {
+    expect(analyzeArray([2,6,4,7,1,6,290,23,66])).toEqual({average:45, min:1, max:290, length:9});
 })
