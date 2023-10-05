@@ -19,11 +19,14 @@ test('Calculator multiply', () => {
 test('Calculator divide', () => {
     expect(calculator.divide(25, 5)).toBe(5);
 })
-test('Caesar cipher', () => {
-    expect(caesarCipher('abcdefghijklmnopqrstuvwxyz')).toBe('bcdefghijklmnopqrstuvwxyza');
+test('Caesar cipher, shift factor of 1 ', () => {
+    expect(caesarCipher('abcdefghijklmnopqrstuvwxyz', 1)).toBe('bcdefghijklmnopqrstuvwxyza');
 })
-test('Caesar cipher #2', () => {
-    expect(caesarCipher('Defend the east wall of the castle.')).toBe('Efgfoe uif fbtu xbmm pg uif dbtumf.');
+test('Caesar cipher, shift factor of 2', () => {
+    expect(caesarCipher('Defend the east wall of the castle.', 2)).toBe('Fghgpf vjg gcuv ycnn qh vjg ecuvng.');
+})
+test('Caesar cipher, shift factor of 3 ', () => {
+    expect(caesarCipher('Hello world!', 3)).toBe('Khoor zruog!');
 })
 test('Analyze array', () => {
     expect(analyzeArray([2,6,4,7,1,6,290,23,66])).toEqual({average:45, min:1, max:290, length:9});

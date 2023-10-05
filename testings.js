@@ -7,7 +7,9 @@ function capitalize(string) {
 
 function reverseString(string) {
     let newString = '';
+    // Declare i to be the string length - 1 so the loop will start from the last item in the index.
     for (let i = string.length - 1; i >= 0; i -= 1) {
+        // Append characters to the variable one by one on each iteration and decrease i by 1.
         newString += string[i];
     }
     return newString;
@@ -28,7 +30,9 @@ const calculator = {
     },
 };
 
-function caesarCipher(string) {
+// This function deconstructs the array and transforms each character one by one into their
+// corresponding ASCII value and appends it into an array.
+function caesarCipher(string, shiftFactor = 1) {
     const asciiCharactersCode = [];
     for (let a = 0; a < string.length; a += 1) {
         if (string.charCodeAt(a) === 90) {
@@ -37,7 +41,7 @@ function caesarCipher(string) {
             asciiCharactersCode.push(97);
         } else if ((string.charCodeAt(a) >= 65 && string.charCodeAt(a) <= 89)
         || (string.charCodeAt(a) >= 97 && string.charCodeAt(a) <= 121)) {
-            asciiCharactersCode.push(string.charCodeAt(a) + 1);
+            asciiCharactersCode.push(string.charCodeAt(a) + shiftFactor);
         } else {
             asciiCharactersCode.push(string.charCodeAt(a));
         }
