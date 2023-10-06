@@ -13,23 +13,19 @@ Concatenates both variables into one and returns it.
  A function that takes a string as an argument and returns it reversed.
 
 Declares a variable with an empty string.
+Uses a loop, declares the index of the loop with a value of the length of the string minus 1 and decrease the index by one.
+Grab the empty string and append the characters one by one into the empty string starting from the last one till the first one.
 
-```
-let reversedString = '';
-```
+### Calculator: 
+An object with 4 methods capable of doing the 4 basic arithmetic operations; addition, subtraction, multiplication and division.
 
-Uses a loop, declares the index of the loop with a value of the length of the string minus 1:
+### Caesar Cipher:
+A function that takes a string and a shift factor, returns the string ciphered by the shift factor.
 
-```
-for (let i = string.length - 1; i >= 0;i -= 1)
-```
+### Analyze array:
+A function that takes an array of numbers and returns an object with the following info about the array;
 
-Grabs the empty string and appends the characters one by one into the empty string starting from the last one till the first one (body of the loop);
-
-```
-{ reversedString += string[i] } 
-```
-
-- **Calculator:** A function that returns an object capable of doing the 4 basic arithmetic operations; addition, subtraction, multiplication and division.
-- **Caesar Cipher:** A function that takes a string and a shift factor, returns the string ciphered.
-- **Analyze array:** A function that takes an array of numbers and returns an object with the following info about the array; average, minimum value, maximum value, length of the array.
+- Average.
+- Minimum value.
+- Maximum value.
+- Length of the array.
