@@ -1,18 +1,16 @@
 # Project: Testing Javascript with Jest.
 
-### List of functions to test and how do they work:
+## List of functions to test and how do they work:
 
-- **Capitalize:** A function that takes a string as an argument and returns it with the first character capitalized. 
-
-##### How does it work?
+### Capitalize
+A function that takes a string as an argument and returns it with the first character capitalized. 
 
 Slices the first character of the received string, it capitalizes it and saves it into a variable.
 Slices the rest of the string (without the first character) and assigns it to another variable.
 Concatenates both variables into one and returns it.
 
-- **Reverse string:** A function that takes a string as an argument and returns it reversed.
-
-##### How does it work?
+### Reverse string
+ A function that takes a string as an argument and returns it reversed.
 
 Declares a variable with an empty string.
 
